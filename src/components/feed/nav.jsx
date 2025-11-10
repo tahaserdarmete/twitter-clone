@@ -32,6 +32,7 @@ const Nav = ({user}) => {
             <img
               src={user.photoURL}
               alt={user.displayName}
+              referrerPolicy="no-referrer"
               className="rounded-full max-w-[45px]"
             />
 
