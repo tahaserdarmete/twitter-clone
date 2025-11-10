@@ -8,7 +8,7 @@ import deleteFromStorage from "../../firebase/deleteFile";
 
 const DropDown = ({tweet}) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const checkBoxRef = useRef(null);
   // Tweet'i. gönderen kişi ile aktif kullanıcı aynı mı
   const isOwn = tweet.user.id === auth.currentUser.uid;
 
@@ -32,6 +32,8 @@ const DropDown = ({tweet}) => {
     } catch (error) {
       toast.error("işlem başarısız");
     }
+    // dropdown'ı kapat
+    checkBoxRef.current.checked = false;
   };
 
   // tweet aktif kullanıcının değilse gösterme
@@ -40,7 +42,7 @@ const DropDown = ({tweet}) => {
   return (
     <>
       <label className="popup z-99">
-        <input type="checkbox" />
+        <input ref={checkBoxRef} type="checkbox" />
         <div className="burger" tabIndex="0">
           <span></span>
           <span></span>

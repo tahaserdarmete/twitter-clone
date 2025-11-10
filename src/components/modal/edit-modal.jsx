@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useRef, useState} from "react";
 import Modal from ".";
 import {toast} from "react-toastify";
 import {db} from "../../firebase";
@@ -49,7 +49,6 @@ const EditModal = ({isOpen, close, tweet}) => {
         updateData["content.image"] = imageUrl;
       }
 
-      console.log(updateData);
       // Belgeyi güncelle
       await updateDoc(docRef, updateData);
 

@@ -22,8 +22,7 @@ const UserInfo = ({tweet}) => {
 
       {tweet.isEdited && (
         <div>
-          <MdEdit className="md:hidden" />
-          <span className="max-md:hidden text-sm">* düzenlendi</span>
+          <MdEdit />
         </div>
       )}
     </div>
