@@ -1,17 +1,32 @@
-# React + Vite
+# Twitter Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Twitter clone developed using **React**, **TailwindCSS**, and **Firebase**. Key features include a user registration/login system, tweet creation, liking, commenting, and user interaction.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## React Compiler
+- User registration and login (Firebase Authentication)
+- Creating, deleting, and listing tweets
+- Liking and commenting on tweets
+- Real-time data updates (Firebase Firestore)
+- Responsive design (mobile and desktop compatible)
+- Notification system (React Toastify)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💻 Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# twitter-clone
+- **React** (v19)
+- **TailwindCSS** (v4)
+- **Firebase** (v12)
+- **React Router Dom** (v7)
+- **Day.js** (date formatting)
+- **UUID** (unique ID generation)
+- **React Icons**
+- **React Toastify** (notifications)
+- **Vite** (rapid development and build)
+
+## 📸 ScreenShot
+
+<img src="twitter-clone.gif" />
